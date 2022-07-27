@@ -17,11 +17,18 @@ public class App {
         output("Fläche Dreieck: " + triangle.area());
         output("Fläche Kreis: " + circle.area());
         output("Differenz r-t: " + areaDiff(rectangle, triangle));
+        output("Differenz c-t: " + areaDiff(circle, triangle));
+        output("Differenz r-c: " + areaDiff(rectangle, circle));
+
 
 }
-    private static double areaDiff(Rectangle r, Triangle t){
-        return r.area() - t.area();   
+    private static double areaDiff(Shape S1, Shape S2){
+        return S1.area() - S2.area();   
         }
+
+    // private static double areaDiff(Rectangle r, Circle t){
+    //     return r.area() - t.area();   
+    //     }
 
     private static void output(String outputStr) {
         System.out.println(outputStr);
