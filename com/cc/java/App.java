@@ -22,6 +22,9 @@ public class App {
 
 
 }
+
+    /* Besser mit Polymorphie! */
+    
     private static double areaDiff(Shape S1, Shape S2){
         return S1.area() - S2.area();   
         }
